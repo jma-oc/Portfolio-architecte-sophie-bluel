@@ -135,11 +135,35 @@ li:hover {
 
 .gallery img {
 	width: 100%;
-
 }
+
+.filterbar {
+	display: flex;
+	justify-content: center;
+	height: 37px;
+	gap: 10px;
+	margin-bottom: 35px;
+}
+
+.filterbar__button {
+	padding : 0 20px;
+	font-family: 'Syne';
+	font-weight: 700;
+	font-size: 16px;
+	color: #1D6154;
+	background-color : unset;
+	border: #1D6154 1px solid;
+	border-radius: 60px;
+}
+
+.filterbar__button:hover {
+	background-color: #1D6154;
+	color: white;
+}
+
 #contact {
 	width: 50%;
-margin: auto;
+	margin: auto;
 }
 #contact > * {
 	text-align: center;
