@@ -12,14 +12,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<script type="module" src="./assets/js/script.js" defer></script>
+	<script src="./assets/js/script.js" defer></script>
+	<script src="./assets/js/modal.js" defer></script> 
 </head>
 
 <body>
 	<div class="edition-bar hidden">
-		<i class="fa-regular fa-pen-to-square"></i>
-		<p>Mode édition</p>
+		<a href="#modal1" class="edition-bar__link">
+			<i class="fa-regular fa-pen-to-square"></i>
+			<p>Mode édition</p>
+		</a>
 	</div>
+	<!-- <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="modal__title">
+		<div class="modal-wrapper">
+			<h2 id="modal__title">Test modal</h2>
+			<p>Blablabla</p>
+			<p>Bloubloublou</p>
+		</div>
+	</aside> -->
 	<header class="header">
 		<a href="./index.html">
 			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
