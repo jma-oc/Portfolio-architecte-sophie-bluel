@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/css/style.css">
-	<script type="module" src="./assets/js/login.js" defer></script>
+	<script src="./assets/js/login.js" defer></script>
 </head>
 
 <body>
@@ -32,12 +32,12 @@
 	<main>
 		<section class="login-container">
 			<h2>Log In</h2>
-			<form action="#" method="post" class="login-form" id="login-form">
+			<form class="login-form" id="login-form"> <!-- action="#" et method="post" pas nécessaires car gérés par JS -->
 				<label class="login-form__label" for="email">E-mail</label>
 				<input class="login-form__input" type="email" name="email" id="email" required>
 				<label class="login-form__label" for="password">Mot de passe</label>
 				<input class="login-form__input" type="password" name="password" id="password" required>
-				<p class="login-form__error"></p>
+				<p class="login-form__error" id="error-message"></p>
 				<input class="login-form__submit" type="submit" value="Se connecter">
 			</form>
 			<p class="login-container__forgot-pwd">Mot de passe oublié</p>
