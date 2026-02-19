@@ -27,7 +27,7 @@
 		aria-labelledby="main-modal-title">
 		<div class="modal-wrapper">
 			<button class="modal__close" aria-label="Fermer la modale"><i class="fa-solid fa-x"></i></button>
-			<button class="modal__previous hidden" aria-label="Précédent"><i
+			<button class="modal__previous" aria-label="Précédent"><i
 					class="fa-solid fa-arrow-left"></i></button>
 			<div class="modal__delete-photo">
 				<h3 class="modal__title" id="main-modal-title">Galerie photo</h3>
@@ -39,17 +39,22 @@
 				<h3 class="modal__title">Ajout photo</h3>
 				<form class="modal__form" action="#" method="post" enctype="multipart/form-data">
 					<div class="modal__form-preview">
-						
-						<label class="modal__form-photolabel" for="photo">+ Ajouter photo</label>
-						<input class="modal__form-input hidden" type="file" name="photo" id="photo" accept="image/*">
+						<img src="./assets/icons/vector.png" class="modal__form-imgpreview">
+						<label class="modal__form-photolabel" for="image">+ Ajouter photo</label>
+						<input class="modal__form-input hidden" type="file" name="image" id="image" accept="image/*">
 						<p class="modal__form-photospecs">jpg, png : 4mo max</p>
 					</div>
-					<label for="title">Titre de la photo</label>
-					<input type="text" name="title" id="title" placeholder="Titre de la photo">
-					<label for="category">Catégorie</label>
-					<select name="category" id="category">
-						<div class="modal__line"></div>
-						<input type="submit" class="modal__input" value="Valider">
+					<div class="modal__form-title-container">
+						<label for="addPhoto_title">Titre</label>
+						<input type="text" name="title" id="addPhoto_title" required>
+					</div>
+					<div class="modal__form-categories-container">
+						<label for="addPhoto_category">Catégorie</label>
+						<select name="category" id="addPhoto_category" required></select>
+					</div>
+					<div class="modal__line"></div>
+					<input type="submit" class="modal__submit" value="Valider" disabled aria-disabled="true">
+				</form>
 			</div>
 		</div>
 	</aside>

@@ -440,13 +440,18 @@ footer nav ul {
 .modal__line {
   width: 100%;
   border-top: solid #b3b3b3 1px;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
-.modal .modal__input {
+.modal .modal__submit, .modal .modal__input {
   padding: 10px 20px;
   border: none;
   margin: 0;
+}
+
+.modal .modal__submit:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
 }
 
 .modal__form {
@@ -454,27 +459,75 @@ footer nav ul {
   flex-direction: column;
   width: 100%;
   gap: 20px;
+  align-items: center;
+}
+
+.modal__form-title-container,
+.modal__form-categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.modal__form label {
+  font-family: "Work Sans";
+  font-size: 14px;
+  font-weight: 500;
+  color: #3d3d3d;
+}
+
+.modal__form input[type="text"],
+.modal__form select {
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+  border: none;
+  padding: 0 15px;
+  height: 51px;
+  background-color: white ;
+  font-size: 14px;
+  color: #444444;
+}
+
+.modal__form-imgpreview {
+  margin-top: 20px;
 }
 
 .modal__form-preview {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #E8F1F6;
   border-radius: 3px;
-  padding: 20px;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.modal__form-imgpreview.preview-active {
+    width: auto;
+    height: 100%;
+    max-height: 169px;
+    object-fit: cover;
+    margin-top: 0;
 }
 
 .modal__form-photolabel {
   font-family: "Work Sans";
   font-size: 14px;
   font-weight: 500;
-  color: #3d3d3d;
+  color: #306685;
   cursor: pointer;
-  padding: 15px 40px;
+  padding: 13px 40px;
   background-color: #CBD6DC;
   border-radius: 50px;
+}
+
+.modal__form-photospecs {
+  font-family: "Work Sans";
+  font-size: 12px;
+  color: #444444;
+  margin-bottom: 20px;
 }
 
 /* Login Page */
