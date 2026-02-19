@@ -13,7 +13,7 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<script src="./assets/js/script.js" defer></script>
-	<script src="./assets/js/modal.js" defer></script> 
+	<script src="./assets/js/modal.js" defer></script>
 </head>
 
 <body>
@@ -23,13 +23,36 @@
 			<p>Mode édition</p>
 		</a>
 	</div>
-	<!-- <aside id="modal1" class="modal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="modal__title">
+	<aside id="modal1" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="false"
+		aria-labelledby="main-modal-title">
 		<div class="modal-wrapper">
-			<h2 id="modal__title">Test modal</h2>
-			<p>Blablabla</p>
-			<p>Bloubloublou</p>
+			<button class="modal__close" aria-label="Fermer la modale"><i class="fa-solid fa-x"></i></button>
+			<button class="modal__previous hidden" aria-label="Précédent"><i
+					class="fa-solid fa-arrow-left"></i></button>
+			<div class="modal__delete-photo">
+				<h3 class="modal__title" id="main-modal-title">Galerie photo</h3>
+				<div class="modal__gallery"></div>
+				<div class="modal__line"></div>
+				<input type="button" id="modal__add-photo-button" class="modal__input" value="Ajouter une photo">
+			</div>
+			<div class="modal__add-photo hidden">
+				<h3 class="modal__title">Ajout photo</h3>
+				<form class="modal__form" action="#" method="post" enctype="multipart/form-data">
+					<div class="modal__form-preview">
+						
+						<label class="modal__form-photolabel" for="photo">+ Ajouter photo</label>
+						<input class="modal__form-input hidden" type="file" name="photo" id="photo" accept="image/*">
+						<p class="modal__form-photospecs">jpg, png : 4mo max</p>
+					</div>
+					<label for="title">Titre de la photo</label>
+					<input type="text" name="title" id="title" placeholder="Titre de la photo">
+					<label for="category">Catégorie</label>
+					<select name="category" id="category">
+						<div class="modal__line"></div>
+						<input type="submit" class="modal__input" value="Valider">
+			</div>
 		</div>
-	</aside> -->
+	</aside>
 	<header class="header">
 		<a href="./index.html">
 			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
@@ -62,7 +85,7 @@
 		<section id="portfolio">
 			<h2>Mes Projets</h2>
 			<div class="filterbar"></div>
-			<div class="gallery"></div>
+			<div class="gallery" aria-live="polite"></div>
 		</section>
 		<section id="contact">
 			<h2>Contact</h2>
