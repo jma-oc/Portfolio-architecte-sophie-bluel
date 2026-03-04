@@ -13,7 +13,6 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<script src="./assets/js/script.js" defer></script>
-	<script src="./assets/js/modal.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +22,7 @@
 			<p>Mode édition</p>
 		</a>
 	</div>
-	<aside id="modal1" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="false"
+	<div id="modal1" class="modal hidden" aria-hidden="true" role="dialog" aria-modal="false"
 		aria-labelledby="main-modal-title">
 		<div class="modal-wrapper">
 			<button class="modal__close" aria-label="Fermer la modale"><i class="fa-solid fa-x"></i></button>
@@ -39,7 +38,7 @@
 				<h3 class="modal__title">Ajout photo</h3>
 				<form class="modal__form" action="#" method="post" enctype="multipart/form-data">
 					<div class="modal__form-preview">
-						<img src="./assets/icons/vector.png" class="modal__form-imgpreview">
+						<img src="./assets/icons/vector.png" class="modal__form-imgpreview" alt="Aperçu de la photo à envoyer">
 						<label class="modal__form-photolabel" for="image">+ Ajouter photo</label>
 						<input class="modal__form-input hidden" type="file" name="image" id="image" accept="image/*">
 						<p class="modal__form-photospecs">jpg, png : 4mo max</p>
@@ -53,11 +52,11 @@
 						<select name="category" id="addPhoto_category" required></select>
 					</div>
 					<div class="modal__line"></div>
-					<input type="submit" class="modal__submit" value="Valider" disabled aria-disabled="true">
+					<input type="submit" class="modal__submit" value="Valider" disabled>
 				</form>
 			</div>
 		</div>
-	</aside>
+	</div>
 	<header class="header">
 		<a href="./index.html">
 			<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
