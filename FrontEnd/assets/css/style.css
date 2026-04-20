@@ -170,7 +170,7 @@ html body .hidden {
 }
 
 body {
-  max-width: 1140px;
+  max-width: 1440px;
   margin: auto;
   font-family: "Work Sans";
   font-size: 14px;
@@ -331,7 +331,12 @@ input[type="submit"], input[type="button"] {
 }
 
 footer {
+  height: 60px;
+  width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 footer nav ul {
