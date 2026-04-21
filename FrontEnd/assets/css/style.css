@@ -500,6 +500,19 @@ footer nav ul {
   color: #444444;
 }
 
+.modal__form-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
 .modal__form-imgpreview {
   margin-top: 20px;
 }
