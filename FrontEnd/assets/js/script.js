@@ -327,6 +327,7 @@
     const token = localStorage.getItem("authToken");
     if (token) {
       document.querySelector(".edition-bar").classList.remove("hidden");
+      document.querySelector(".filterbar").classList.add("hidden");
       document.querySelector(".header").style.marginTop = "100px";
       const loginLink = document.querySelector(".login-link");
       loginLink.innerHTML = '<a href="#">logout</a>';
