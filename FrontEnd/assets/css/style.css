@@ -179,7 +179,12 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 50px 0;
+  margin: 50px auto;
+  width: 1140px;
+}
+main {
+  width: 950px;
+  margin: auto;
 }
 section {
   margin: 50px 0;
@@ -228,7 +233,6 @@ li:hover {
 }
 #introduction img {
   display: block;
-  margin: auto;
   width: 80%;
 }
 
@@ -250,15 +254,14 @@ li:hover {
 .gallery {
   margin-top: 35px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .gallery img {
-  width: 100%;
-  height: 490px;
+  width: 305px;
+  height: 407px;
   object-fit: cover;
 }
 
