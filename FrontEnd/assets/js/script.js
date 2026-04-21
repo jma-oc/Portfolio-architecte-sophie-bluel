@@ -275,6 +275,11 @@
     document.querySelector(".modal__form-photolabel").style.display = "block";
     document.querySelector(".modal__form-photospecs").style.display = "block";
     document.querySelector(".modal__submit").disabled = true;
+    const errorMsg = document.getElementById("file-error-msg");
+    if (errorMsg) {
+      errorMsg.textContent = "";
+      errorMsg.classList.add("hidden");
+    }
   };
 
   // SUPPRESSION DE PROJET
