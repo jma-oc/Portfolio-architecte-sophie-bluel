@@ -286,6 +286,11 @@ li:hover {
   cursor: pointer;
 }
 
+.filterbar__button[aria-pressed="true"] {
+    background-color: #1d6154;
+    color: white;
+}
+
 #contact {
   width: 50%;
   margin: auto;
