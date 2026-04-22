@@ -169,22 +169,32 @@ html body .hidden {
   margin-top: 109px;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   max-width: 1440px;
   margin: auto;
+  height: 100%;
   font-family: "Work Sans";
   font-size: 14px;
   background-color: rgba(255, 254, 248, 1);
+  display: flex;
+  flex-direction: column;
 }
+
 header {
   display: flex;
   justify-content: space-between;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 50px 0;
   width: 1140px;
 }
 main {
   width: 950px;
   margin: auto;
+  flex: 1;
 }
 section {
   margin: 50px 0;
@@ -350,7 +360,6 @@ footer {
 footer nav ul {
   display: flex;
   justify-content: flex-end;
-  margin: 2em;
 }
 
 /* Modal */
@@ -431,7 +440,7 @@ footer nav ul {
 }
 
 .modal__item img {
-  width: 100%;
+  width: 76px;
   height: 100px;
   object-fit: cover;
 }
